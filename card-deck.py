@@ -31,18 +31,19 @@ class Card:
     def __str__(self):
         return f"{self.value} of {self.suit}"
 
+if __name__ == "__main__":
 
-# card1 = Card("hearts", "10")
-# card1.present()
-deck = Deck()
-print(deck.get_remaining())
-print(deck.count_remaining())
-deck.shuffle()
-print("After shuffling")
-print(deck.get_remaining())
-print(deck.count_remaining())
-dealt_card = deck.deal()
-print("Dealt card:", dealt_card)
-print("Remaining cards after dealing one card:")
-print(deck.count_remaining())
-print(deck.get_remaining())
+    # card1 = Card("hearts", "10")
+    # card1.present()
+    deck = Deck()
+    print(deck.get_remaining())
+    print(deck.count_remaining())
+    deck.shuffle()
+    print("After shuffling")
+    print(deck.get_remaining())
+    print(deck.count_remaining())
+    dealt_card = deck.deal()
+    print("Dealt card:", dealt_card)
+    print("Remaining cards after dealing one card:")
+    print(deck.count_remaining())
+    print(deck.get_remaining())
